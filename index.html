@@ -13,9 +13,20 @@
   .zh { display: none; }
   hr { border: none; border-top: 1px solid #eee; margin: 3em 0; }
   .updated { color: #999; font-size: 0.9em; }
+  .logo { text-align: center; margin-bottom: 10px; }
+  .logo svg { width: 80px; height: 80px; border-radius: 18px; }
 </style>
 </head>
 <body>
+
+<div class="logo">
+  <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9B30FF"/><stop offset="100%" stop-color="#E040A0"/></linearGradient></defs>
+    <rect width="120" height="120" rx="27" fill="url(#bg)"/>
+    <path d="M35 40 h50 a10 10 0 0 1 10 10 v25 a10 10 0 0 1-10 10 h-10 l-12 14 v-14 h-28 a10 10 0 0 1-10-10 v-25 a10 10 0 0 1 10-10z" fill="white" opacity="0.95"/>
+    <path d="M52 55 l7 10 l14-18" stroke="#B43CC8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+</div>
 
 <div class="lang-toggle">
   <a href="#" onclick="document.querySelectorAll('.en,.zh').forEach(e=>e.style.display=e.style.display==='none'?'block':'none');return false;">EN / 中文</a>
